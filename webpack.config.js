@@ -4,7 +4,7 @@ const Dotenv = require('dotenv-webpack');
 const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => ({
   output: {
-    publicPath: argv.mode == 'development' ? "http://localhost:4050/" : "https://micro-data1.vercel.app/",
+    publicPath: argv.mode === 'development' ? "http://localhost:4050/" : "https://micro-data1.vercel.app/",
   },
 
   resolve: {
