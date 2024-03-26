@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function StudentForm({ onSubmit }) { // Accepting an onSubmit prop
-    const [formData, setFormData] = useState({ name: '', email: '', contactNumber: ''});
+    const [formData, setFormData] = useState({ name: '', email: '', contactNumber: '', address: ''});
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -17,7 +17,8 @@ function StudentForm({ onSubmit }) { // Accepting an onSubmit prop
         <form onSubmit={handleSubmit}>
             <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} /> <br></br>
             <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} /> <br></br>
-            <input type="tel" name="contactNumber" placeholder="Contact Number" value={formData.contactNumber} onChange={handleChange} />
+            <input type="tel" name="contactNumber" placeholder="Contact Number" value={formData.contactNumber} onChange={handleChange} /> <br></br>
+            <input type="text" name="address" placeholder="Address" value={formData.address} onChange={handleChange} /> 
             <br></br><button type="submit">Submit</button>
         </form>
     );
