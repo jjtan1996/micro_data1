@@ -4,7 +4,7 @@ const Dotenv = require('dotenv-webpack');
 const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => ({
   output: {
-    publicPath: "micro-data1-b2gwr06dp-jaspers-projects-f11df7d9.vercel.app/",
+    publicPath: "https://micro-data1-jaspers-projects-f11df7d9.vercel.app/",
   },
 
   resolve: {
